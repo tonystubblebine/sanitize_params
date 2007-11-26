@@ -1,6 +1,6 @@
 module SanitizeParams
 
-  def sanitize_params(params)
+  def sanitize_params(params = params)
     params = walk_hash(params)
   end
 
