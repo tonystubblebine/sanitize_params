@@ -1,4 +1,6 @@
 module SanitizeParams
+  
+  include WhiteListHelper
 
   def sanitize_params(params = params)
     params = walk_hash(params) if params
